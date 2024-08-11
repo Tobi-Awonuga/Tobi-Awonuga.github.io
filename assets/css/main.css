@@ -3226,48 +3226,59 @@ input, select, textarea {
 		z-index: 1;
 		overflow: hidden;
 	}
+#wrapper > .bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #c3360b;
+		background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/trsxdfcgyhu.jpeg");
+		background-size: auto, auto, 100% auto;
+		background-position: center, center, top center;
+		background-repeat: repeat, no-repeat, no-repeat;
+		background-attachment: scroll, scroll, scroll;
+		z-index: -1;
+		opacity: 0; /* Start hidden */
+		animation: fadeInBackground 1.5s ease-in-out forwards; /* Smoother 4s fade-in animation */
+		animation-delay: 0s; /* Delay to allow the initial image to show first */
+	}
+	
+	#wrapper > .bg.fixed {
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+	}
+	
+	#wrapper:before {
+		pointer-events: none;
+		content: '';
+		display: block;
+		height: 100%;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background: url("../../images/imago.jpeg") center center no-repeat;
+		background-size: cover;
+		z-index: -2;
+		opacity: 1;
+		transition: opacity 2s ease-in-out;
+		animation: fadeOutInitialImage 1.5s ease-in-out forwards;
+		animation-delay: 0s; /* Shorter delay before fading out */
+	}
+	
+	@keyframes fadeInBackground {
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	}
+	
+	@keyframes fadeOutInitialImage {
+		0% { opacity: 1; }
+		100% { opacity: 1; }
+	}
+	
 
-		#wrapper > .bg {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: #c3360b;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/trsxdfcgyhu.jpeg");
-			background-size: auto, auto, 100%auto;
-			background-position: center, center, top center;
-			background-repeat: repeat, no-repeat, no-repeat;
-			background-attachment:scroll, scroll,  scroll;
-			z-index: -1;
-		}
-
-			#wrapper > .bg.fixed {
-				position: fixed;
-				width: 100vw;
-				height: 100vh;
-			}
-
-		#wrapper.fade-in:before {
-			pointer-events: none;
-			-moz-transition: opacity 1s ease-in-out;
-			-webkit-transition: opacity 1s ease-in-out;
-			-ms-transition: opacity 1s ease-in-out;
-			transition: opacity 1s ease-in-out;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
-			background: #8300b3;
-			content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			opacity: 0;
-			position: fixed;
-			top: 0;
-			width: 100%;
-		}
 
 		body.is-preload #wrapper.fade-in:before {
 			opacity: 1;
