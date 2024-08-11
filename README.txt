@@ -47,7 +47,7 @@ Contact: Get in touch with me directly through the Contact page or connect via s
 ##Installation & Setup
 If you’re interested in setting up a similar portfolio for yourself:
 
-Clone the Repository: git clone https://github.com/tobiawonuga/portfolio.git
+Clone the Repository: git clone https://github.com/Tobi-Awonuga/Tobi-Awonuga.github.io
 Navigate to the Project Directory: cd portfolio
 Open in Browser: Simply open the index.html file in your preferred web browser.
 
