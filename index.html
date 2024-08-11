@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Tobi Awonuga's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="https://cdn.jsdelivr.net/npm/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/lightbox2/dist/js/lightbox.min.js"></script>
+<!-- Lightbox CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+
+<!-- Lightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<style>
+	/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* The navigation buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+</style>
+
+	</head>
+	<body class="is-preload">
+		<script>
+			// Your Modal JavaScript Here
+			// Open the Modal
+			function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+
+			// Rest of your JavaScript here
+		</script>
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Tobi Awonuga<br />
+						</h1>
+						<p>Computer Programming Student skilled in developing complex Websites & Applications<a href="https://www.linkedin.com/in/tobiawonuga/"> <br />@TobiAwonuga</a> </p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Awonuga</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Projects</a></li>
+							<li><a href="generic.html">Contact Me</a></li>
+							<li><a href="elements.html">About Me</a></li>
+						</ul>
+						<ul class="icons">
+							
+							<li><a href="https://www.linkedin.com/in/tobiawonuga/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Tobi-Awonuga" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									
+									<h2><a href="https://github.com/Tobi-Awonuga/E-Commerce-WebApp">E-Commerce Website<br />
+									</a></h2>
+									<p>In this project I build an E-commerce website with ASP.Net Core MVC</p>
+								</header>
+								<a href="https://github.com/Tobi-Awonuga/E-Commerce-WebApp" class="image main"><img src="images/finalprojectticket.PNG" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="https://github.com/Tobi-Awonuga/E-Commerce-WebApp" class="button large">View Project</a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<h2><a href="https://github.com/Tobi-Awonuga/Hospital-Management-System">Inventory Management System<br />
+										</a></h2>
+									</header>
+									<a href="https://github.com/Tobi-Awonuga/Hospital-Management-System" class="image fit"><img src="images/trackmate (2).png" alt="" /></a>
+									<p>In this project I build an optimized Inventory Management System on PowerApps</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Tobi-Awonuga/Hospital-Management-System" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="#">Personal Portfolio Website<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/CaptureMeGoody.PNG" alt="" /></a>
+									<p>Here's how I created my portfolio website using HTML & CSS</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">View Project</a></li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+										<h2><a href="#" onclick="event.preventDefault();openModal();currentSlide(1)">HMS Screenshots</a></h2>
+									</header>
+								
+									<!-- Thumbnail Image -->
+									<a href="#" class="image fit" onclick="event.preventDefault();openModal();currentSlide(1)">
+										<img src="images/patientreg.PNG" alt="Dashboard Screenshot" />
+									</a>
+								
+									<p>View screenshots of my upcoming project, a Hospital Management System</p>
+								
+									<!-- Button to Open Modal -->
+									<ul class="actions special">
+										<li>
+											<a href="#" class="btn btn-primary" onclick="event.preventDefault(); openModal();currentSlide(1)">View Screenshots</a>
+										</li>
+									</ul>
+								</article>
+								
+								<!-- The Modal / Lightbox -->
+								<div id="myModal" class="modal">
+									<span class="close">&times;</span>
+								  <span class="close cursor" onclick="closeModal()">&times;</span>
+								  <div class="modal-content">
+									  
+									<!-- Full-width Images -->
+									<div class="mySlides">
+									  <img src="images/dashloll.PNG" style="width:100%">
+									</div>
+								
+									<div class="mySlides">
+									  <img src="images/patientreg.PNG" style="width:100%">
+									</div>
+								
+									<div class="mySlides">
+										<img src="images/Staffzz.PNG" style="width:100%">
+									  </div>
+									<!-- Next/Previous Controls -->
+									<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+									<a class="next" onclick="plusSlides(1)">&#10095;</a>
+								
+								  </div>
+								</div>
+								
+								
+								
+								
+								<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/tobiawonuga/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/Tobi-Awonuga" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy;</li><li><a href="https://www.linkedin.com/in/tobiawonuga/">Awonuga</a></li></ul>
+				</div>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
