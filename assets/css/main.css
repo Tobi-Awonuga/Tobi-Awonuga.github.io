@@ -3216,6 +3216,15 @@ input, select, textarea {
 	}
 
 /* Wrapper */
+#poof {
+    background-color: #3d3d8f; /* Dark purple background */
+    padding: 20px;            /* Space inside the div */
+    margin: 20px 0;           /* Space outside the div */
+    border: 1px solid #2a2a6d;   /* Slightly darker purple border */
+    border-radius: 8px;       /* Rounded corners */
+    text-align: center;       /* Center text */
+    color: #ffffff;           /* White text color for contrast */
+}
 
 	#wrapper {
 		-moz-transition: opacity 0.5s ease;
