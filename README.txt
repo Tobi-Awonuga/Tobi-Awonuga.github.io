@@ -58,6 +58,8 @@ Adding New Projects: As I continue to develop new projects, this portfolio will 
 Advanced Animations: Implementing CSS and JavaScript animations to enhance user experience.
 Dark Mode Toggle: Adding a dark mode option for better accessibility and user preference.
 
+Website link: https://tobi-awonuga.github.io/
+
 Add-Ons Used:
 jQuery (jquery.com)
 Scrollex (github.com/ajlkn/jquery.scrollex)
