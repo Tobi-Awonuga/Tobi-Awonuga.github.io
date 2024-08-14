@@ -3247,26 +3247,6 @@ input, select, textarea {
 		height: 100vh;
 	}
 	
-	#wrapper:before {
-		pointer-events: none;
-		content: '';
-		display: block;
-		height: 100%;
-		left: 0;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		background: url("../../images/imago.jpeg") center center no-repeat;
-		background-size: cover;
-		z-index: -2;
-		opacity: 1;
-	}
-	
-	
-
-		body.is-preload #wrapper.fade-in:before {
-			opacity: 1;
-		}
 
 		@media screen and (orientation: portrait) {
 
